@@ -49,10 +49,104 @@
     text-transform: uppercase;
 }
 
+/* RESONSIVO */
 
+@media (min-width: 1200px) {
+    .section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
 
+    .section h2 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .menuGrid {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 8px;
+    }
+
+    .card {
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.03); 
+    }
+
+    .card img {
+        width: 180px;
+        height: 160px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .card span {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+}
+/* Tablet e Celulares Grandes */
 @media (max-width: 900px) {
     .menuGrid {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .card img {
+        width: 130px;
+        height: 130px;
+    }
+}
+@media (max-width: 760px) {
+    .section {
+        padding: 10px;
+        height: auto;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+        line-height: 2;
+        margin-bottom: 10px;
+    }
+
+    .menuGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px; 
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card span {
+        font-size: 0.65rem;
+        text-align: center;
+    }
+}
+
+/* Celulares Pequenos (iPhone SE, etc) */
+@media (max-width: 480px) {
+    .menuGrid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        aspect-ratio: 1/1;
     }
 }

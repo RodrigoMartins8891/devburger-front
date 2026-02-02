@@ -149,17 +149,51 @@
 
 @media (max-width: 1024px) {
     .text h2 {
-        font-size: 4rem; /* Diminui o título em tablets */
+        font-size: 4rem;
+
     }
-    
+
     .image img {
-        max-width: 450px; /* Reduz o hambúrguer levemente */
+        max-width: 400px;
+    }
+
+    .image1 img {
+        width: 60%;
+        max-width: 280px;
+        bottom: 27%;
+        left: 78%;
+    }
+}
+
+@media (max-width: 880px) {
+
+    .main header {
+        flex-direction: column;
+        height: auto;
+        padding: 35px;
+        margin-top: 15px;
+        gap: 20px;
+    }
+
+    .text h2 {
+        font-size: 3.5rem;
+    }
+
+    .image img {
+        max-width: 300px;
+    }
+
+    .image1 img {
+        width: 50%;
+        max-width: 220px;
+        top: 72%;
+        left: 88%;
     }
 }
 
 @media (max-width: 768px) {
     .main {
-        overflow-y: auto; /* Permite scroll no celular se o conteúdo for maior que a tela */
+        overflow-y: auto;
         height: auto;
         min-height: 100vh;
     }
@@ -167,29 +201,29 @@
     .main header {
         flex-direction: column;
         height: auto;
-        padding: 20px;
-        gap: 15px;
+        padding: 28px;
+        gap: 12px;
     }
 
     .main header nav {
-        position: static; /* Remove o centralizado absoluto no mobile */
+        position: static;
         transform: none;
         left: 0;
         gap: 15px;
     }
 
     .hero {
-        flex-direction: column; /* Empilha texto e imagem */
+        flex-direction: column;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 45px;
     }
 
     .text {
-        align-items: center; /* Centraliza o texto no mobile */
-        text-align: center;
+        align-items: center;
     }
 
-    .text p, .text span {
+    .text p,
+    .text span {
         text-align: center;
     }
 
@@ -197,11 +231,14 @@
         font-size: 3rem;
     }
 
-    /* Ajuste da Sombra para o novo tamanho da imagem no mobile */
+    .image {
+        margin-right: 80px;
+    }
+
     .image1 img {
         width: 50%;
-        left: 50%;
-        bottom: 10%;
+        left: 53%;
+        bottom: 4%;
     }
 
     .thumbnails {
@@ -211,6 +248,11 @@
 }
 
 @media (max-width: 480px) {
+    .main {
+        height: auto;
+        min-height: 100vh;
+    }
+
     .text h2 {
         font-size: 2.5rem;
     }
@@ -222,5 +264,36 @@
 
     .image img {
         max-width: 300px;
+    }
+
+    .image1 img {
+        width: 50%;
+        left: 50%;
+        bottom: 21%;
+    }
+}
+
+@media (max-width: 320px) {
+    .text h2 {
+        font-size: 1.6rem;
+    }
+
+    .text p {
+        font-size: 1.2rem;
+    }
+
+    .image img {
+        max-width: 220px;
+    }
+
+    .image1 img {
+        width: 50%;
+        left: 40%;
+        bottom: 25%;
+    }
+
+    .thumbnails img {
+        width: 30px;
+        height: 30px;
     }
 }

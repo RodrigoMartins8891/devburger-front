@@ -1,0 +1,82 @@
+.mainContainer {
+    background-color: #12372A;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Lexend Zetta', sans-serif;
+    color: #FBFADA;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.ordersGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.orderCard {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(251, 250, 218, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(251, 250, 218, 0.05);
+    padding-bottom: 10px;
+}
+
+.statusBadge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.statusPendente { background-color: #f39c12; color: #fff; }
+.statusPreparando { background-color: #3498db; color: #fff; }
+.statusEntregue { background-color: #27ae60; color: #fff; }
+.statusPadrao { background-color: #7f8c8d; color: #fff; }
+
+.cardBody p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.cardBody span {
+    color: #ADB99F;
+    font-size: 0.7rem;
+}
+
+.backLink {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #ADB99F;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.loading {
+    background-color: #12372A;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FBFADA;
+}

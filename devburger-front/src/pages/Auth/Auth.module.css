@@ -1,0 +1,78 @@
+.container {
+    background-color: #12372A;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+.formCard {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid rgba(251, 250, 218, 0.1);
+}
+
+.formCard h1 {
+    color: #FBFADA;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.formCard h2 {
+    color: #ADB99F;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #436850;
+    background: transparent;
+    color: #FBFADA;
+    outline: none;
+}
+
+.loginButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #FBFADA;
+    color: #12372A;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.loginButton:hover {
+    background-color: #ADB99F;
+}
+
+.toggleText {
+    color: #ADB99F;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.toggleText a {
+    color: #FBFADA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.backLink {
+    display: block;
+    margin-top: 20px;
+    color: #ADB99F;
+    font-size: 0.7rem;
+    text-decoration: none;
+}

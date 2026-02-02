@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: row;          /* FORÇA lado a lado */
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+/* CARDS */
+.formCard {
+    background-color: #1a2e26;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* FORM INTERNO */
+.formCard form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* TÍTULO */
+.formCard h1 {
+    color: #FBFADA;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* INPUTS */
+.formCard input,
+.formCard select {
+    background: transparent;
+    border: 1px solid #436850;
+    padding: 12px;
+    border-radius: 8px;
+    color: #FBFADA;
+    outline: none;
+}
+
+/* UPLOAD */
+.uploadArea {
+    border: 2px dashed #436850;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.uploadArea label {
+    color: #ADB99F;
+    cursor: pointer;
+}
+
+.uploadArea input {
+    display: none;
+}
+
+.previewImg {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* BOTÃO */
+.saveBtn {
+    background-color: #FBFADA;
+    color: #12372A;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* LISTA */
+.gridAdmin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.productRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #436850;
+}
+
+.info span {
+    color: #FBFADA;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.info p {
+    color: #ADB99F;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+/* DELETE */
+.deleteBtn {
+    background: #f44336;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}

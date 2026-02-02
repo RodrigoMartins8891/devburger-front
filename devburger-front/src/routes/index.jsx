@@ -2,74 +2,48 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from "../App";
 import Home from "../pages/Home/home";
-import Menu from "../pages/Menu/menu";
-import { Login } from "../pages/Login";
-import { Register } from "../pages/Register";
-import { MeusPedidos } from "../pages/MeusPedidos";
-import { AdminRoute } from "./AdminRoute";
-import { AdminPedidos } from "../pages/AdminPedidos";
-import { PrivateRoute } from "./PrivateRoute";
+import { Login } from "../pages/Auth/Login";
+import { Register } from "../pages/Auth/Register";
+import { MeusPedidos } from "../pages/pedidos/MeusPedidos";
 import { Cart } from "../pages/Cart";
 import { Checkout } from "../pages/Checkout";
+
+// Admin Imports
+import { AdminRoute } from "./AdminRoute";
+import { PrivateRoute } from "./PrivateRoute";
+import { AdminLayout } from "../pages/Admin/AdminLayout";
+import { AdminPedidos } from "../pages/Admin/AdminPedidos";
+import { AdminProdutos } from "../pages/Admin/AdminProdutos";
 
 export function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-
-        {/* 🔓 ROTAS PÚBLICAS */}
+        {/* 🔓 PÚBLICAS */}
         <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        {/* 🔐 ROTAS PRIVADAS (USUÁRIO LOGADO) */}
-        <Route
-          path="/home"
-          element={
-            <PrivateRoute>
-              <App />
-            </PrivateRoute>
-          }
-        />
+        {/* 🔐 CLIENTE */}
+        <Route path="/home" element={<PrivateRoute><App /></PrivateRoute>} />
+        <Route path="/carrinho" element={<PrivateRoute><Cart /></PrivateRoute>} />
+        <Route path="/checkout" element={<PrivateRoute><Checkout /></PrivateRoute>} />
+        <Route path="/meus-pedidos" element={<PrivateRoute><MeusPedidos /></PrivateRoute>} />
 
-        <Route
-          path="/carrinho"
-          element={
-            <PrivateRoute>
-              <Cart />
-            </PrivateRoute>
-          }
-        />
-
-        <Route
-          path="/checkout"
-          element={
-            <PrivateRoute>
-              <Checkout />
-            </PrivateRoute>
-          }
-        />
-
-        <Route
-          path="/meus-pedidos"
-          element={
-            <PrivateRoute>
-              <MeusPedidos />
-            </PrivateRoute>
-          }
-        />
-
-        {/* 🔐 ROTAS ADMIN */}
-        <Route
-          path="/admin/pedidos"
+        {/* 🔐 PAINEL ADMIN - Versão Corrigida */}
+        <Route 
+          path="/admin" 
           element={
             <AdminRoute>
-              <AdminPedidos />
+              <AdminLayout />
             </AdminRoute>
           }
-        />
-
+        >
+          {/* Use 'index' como atributo, não como tag */}
+          <Route index element={<AdminPedidos />} /> 
+          <Route path="pedidos" element={<AdminPedidos />} />
+          <Route path="produtos" element={<AdminProdutos />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,128 @@
+.mainContainer {
+    background-color: #12372A;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+.cartCard {
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(251, 250, 218, 0.1);
+    height: fit-content;
+}
+
+.title {
+    color: #FBFADA;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.itemList {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(251, 250, 218, 0.1);
+}
+
+.info h3 {
+    color: #FBFADA;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.info p {
+    color: #ADB99F;
+    font-size: 0.8rem;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    background: rgba(251, 250, 218, 0.1);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.quantityControl button {
+    background: none;
+    border: none;
+    color: #FBFADA;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quantityControl span {
+    color: #FBFADA;
+    margin: 0 10px;
+    font-size: 0.8rem;
+}
+
+.removeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.totalRow {
+    display: flex;
+    justify-content: space-between;
+    color: #FBFADA;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.checkoutBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #FBFADA;
+    color: #12372A;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkoutBtn:hover {
+    background-color: #ADB99F;
+}
+
+.linkBack {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ADB99F;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.linkBack:hover {
+    color: #FBFADA; /* Brilha em dourado/creme ao passar o mouse */
+    text-decoration: underline;
+}
