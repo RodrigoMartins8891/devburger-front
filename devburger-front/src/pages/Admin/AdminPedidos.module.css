@@ -1,5 +1,5 @@
 .adminContainer {
-    background-color: #0f1f1a; /* Um verde quase preto, mais sério */
+    background-color: #0f1f1a;
     min-height: 100vh;
     padding: 40px 5%;
     font-family: 'Lexend Zetta', sans-serif;
@@ -31,9 +31,9 @@
     border-left: 5px solid #FBFADA;
 }
 
-.orderInfo h3 { font-size: 1rem; margin-bottom: 10px; }
-.orderInfo p { font-size: 0.8rem; color: #ADB99F; margin: 5px 0; }
-.statusCurrent { margin-top: 10px; font-size: 0.7rem; color: #FBFADA; }
+.orderInfo h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.orderInfo p { font-size: 0.9rem; color: #ADB99F; margin: 5px 0; }
+.statusCurrent { margin-top: 10px; font-size: 0.9rem; color: #FBFADA; }
 
 .actionButtons {
     display: grid;
@@ -45,7 +45,7 @@
     padding: 10px 15px;
     border: none;
     border-radius: 6px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
@@ -63,6 +63,15 @@
     transform: scale(1.05);
 }
 
+.previewImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #FBFADA;
+}
+
 .loader {
     background-color: #0f1f1a;
     height: 100vh;
@@ -78,6 +87,5 @@
 }
 
 .orderCard {
-    /* ... seus estilos anteriores ... */
     animation: highlight 1s ease-out;
 }

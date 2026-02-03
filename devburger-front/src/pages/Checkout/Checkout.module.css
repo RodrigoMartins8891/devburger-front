@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px 20px;
     font-family: 'Lexend Zetta', sans-serif;
 }
 
@@ -19,7 +19,7 @@
 
 .title {
     color: #FBFADA;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -40,18 +40,18 @@
 
 .itemName {
     color: #FBFADA;
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: block;
 }
 
 .itemQty {
     color: #ADB99F;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .itemPrice {
     color: #FBFADA;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .totalContainer {
@@ -81,6 +81,7 @@
     margin-top: 30px;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 1rem;
 }
 
 .finishButton:hover {
@@ -94,7 +95,7 @@
     margin-top: 20px;
     color: #ADB99F;
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 .emptyContainer {
