@@ -117,17 +117,6 @@ npm run dev
 
 ---
 
-## 📸 Demonstração
-
-📹 Vídeo demonstrando:
-
-* Painel admin alterando status
-* Atualização refletindo no banco MySQL
-* Atualização em tempo real no frontend
-
-*(link ou gif pode ser adicionado aqui)*
-
----
 
 ## 🎯 Objetivo do Projeto
 
