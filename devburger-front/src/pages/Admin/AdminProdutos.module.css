@@ -122,3 +122,37 @@
     border-radius: 5px;
     cursor: pointer;
 }
+/* Container para alinhar os botões de ação (Editar e Excluir) */
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Estilo do Botão Editar */
+.editBtn {
+    background: #436850;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.editBtn:hover {
+    background: #5a8a6a;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Faz a info ocupar o espaço restante e empurrar os botões para a direita */
+    margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column; /* No celular, eles voltam a ficar um embaixo do outro */
+        align-items: center;
+    }
+}

@@ -8,16 +8,16 @@
 }
 
 .main header {
-    padding: 0px 5%;
+    padding: 15px 5%;
     display: flex;
     align-items: center;
     position: relative;
-    height: 80px;
+    height: 90px;
 }
 
 .main header h1 {
     margin: 0;
-    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
     color: #FBFADA;
     font-family: 'Lexend Zetta', sans-serif;
     font-weight: 500;
@@ -28,7 +28,6 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-
     display: flex;
     gap: 30px;
 }
@@ -38,7 +37,7 @@
     font-weight: 200;
     font-family: 'Sansita Swashed', sans-serif;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     transition: color 0.3s;
 }
 
@@ -52,8 +51,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 100px;
 }
 
 /* TEXTO */
@@ -63,7 +62,7 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .text span {
@@ -71,14 +70,14 @@
     font-weight: 550;
     color: #ADB99F;
     letter-spacing: 6px;
-    font-size: 1.8rem;
-    margin: 15px 0 0 0;
+    font-size: 2.8rem;
+    margin: 12px 0 0 0;
     padding: 0;
     line-height: 1;
 }
 
 .text h2 {
-    font-size: 5rem;
+    font-size: 7rem;
     font-family: 'sansita swashed', sans-serif;
     color: #FBFADA;
     margin: 0;
@@ -87,7 +86,7 @@
 }
 
 .text p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: 'lexend Zetta', sans-serif;
     color: #ADB99F;
     opacity: 0.9;
@@ -107,7 +106,7 @@
 /* O Hambúrguer */
 .image img {
     width: 100%;
-    max-width: 550px;
+    max-width: 650px;
     height: auto;
     position: relative;
     z-index: 2;
@@ -116,10 +115,10 @@
 /* A Sombra (Ellipse) */
 .image1 img {
     position: absolute;
-    width: 60%;
-    max-width: 340px;
-    bottom: 16%;
-    left: 73%;
+    width: 70%;
+    max-width: 360px;
+    bottom: 24%;
+    left: 71%;
     transform: translateX(-50%);
     z-index: 1;
     filter: blur(2px);
@@ -134,8 +133,8 @@
 }
 
 .thumbnails img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid transparent;

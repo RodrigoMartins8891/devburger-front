@@ -1,25 +1,24 @@
 .adminWrapper {
-    display: flex;
-    min-height: 100vh;
-    background-color: #0f1f1a;
+  display: flex;
+  min-height: 100vh;
+  background-color: #0f1f19;
 }
-.content {
-    flex: 1;                 /* ISSO É O MAIS IMPORTANTE */
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-
 
 .sidebar {
-    width: 250px;
-    background-color: #1a2e26;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid rgba(251, 250, 218, 0.1);
+  width: 260px;
+  background-color: #12372A;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .logo {

@@ -15,13 +15,13 @@ export function AdminLayout() {
                 <h2 className={styles.logo}>BURGUR <span>ADMIN</span></h2>
                 <nav className={styles.navMenu}>
                     <Link to="/admin/pedidos">📦 Pedidos em Tempo Real</Link>
+                    {/* Este link agora centraliza tudo sobre produtos */}
                     <Link to="/admin/produtos">🍔 Gerenciar Cardápio</Link>
                 </nav>
                 <button onClick={handleLogout} className={styles.logoutBtn}>Sair do Painel</button>
             </aside>
 
             <main className={styles.content}>
-                {/* O Outlet é onde as páginas (Pedidos ou Produtos) vão aparecer */}
                 <Outlet />
             </main>
         </div>
