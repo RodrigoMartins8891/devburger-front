@@ -1,8 +1,8 @@
 🍔 DevBurger – Frontend
 
-Frontend da aplicação DevBurger, uma plataforma de pedidos de hamburgueria desenvolvida para praticar conceitos modernos de Front-end, consumo de APIs REST e organização de projetos React.
+Frontend da aplicação DevBurger, uma plataforma de pedidos para hamburgueria, desenvolvida com foco em React, consumo de APIs REST e boas práticas de organização de projetos front-end.
 
-O sistema permite que usuários visualizem produtos, adicionem itens ao carrinho e realizem pedidos de forma simples e intuitiva.
+O sistema permite que usuários visualizem produtos, adicionem itens ao carrinho e realizem pedidos de forma simples, intuitiva e responsiva.
 
 🚀 Tecnologias Utilizadas
 
@@ -34,10 +34,10 @@ Interface responsiva
 
 🔗 Integração com Backend
 
-O frontend consome a API do projeto DevBurger Backend:
+O frontend consome a API REST do projeto DevBurger Backend, responsável pela autenticação, produtos e pedidos.
 
 👉 Repositório do backend:
-https://github.com/RodrigoMartins8891/devburger-back
+🔗 https://github.com/RodrigoMartins8891/devburger-back
 
 ▶️ Como Executar o Projeto
 # Clone o repositório
@@ -52,26 +52,19 @@ npm install
 # Inicie o servidor de desenvolvimento
 npm run dev
 
-A aplicação estará disponível em:
 
-http://localhost:5173
+A aplicação estará disponível em:
+👉 http://localhost:5173
 
 📌 Observações
 
-Este projeto foi desenvolvido com foco em aprendizado prático e portfólio.
+Projeto desenvolvido com foco em aprendizado prático e portfólio
 
-O backend deve estar rodando para que todas as funcionalidades funcionem corretamente.
+O backend deve estar rodando para o funcionamento completo da aplicação
 
-## 🔗 Repositório do Back-end
-
-👉 API desenvolvida em Node.js + Express  
-🔗 https://github.com/RodrigoMartins8891/devburger-back
-
-
-**Rodrigo Martins**
+Rodrigo Martins
 Desenvolvedor Full Stack
 
-* LinkedIn: (https://www.linkedin.com/in/rodrigo-martins-de-oliveira1988/)
-* GitHub: (https://github.com/RodrigoMartins8891/)
+LinkedIn: https://www.linkedin.com/in/rodrigo-martins-de-oliveira1988/
 
-
+GitHub: https://github.com/RodrigoMartins8891/
