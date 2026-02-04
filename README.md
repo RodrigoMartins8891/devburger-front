@@ -62,6 +62,12 @@ Este projeto foi desenvolvido com foco em aprendizado prático e portfólio.
 
 O backend deve estar rodando para que todas as funcionalidades funcionem corretamente.
 
+## 🔗 Repositório do Back-end
+
+👉 API desenvolvida em Node.js + Express  
+🔗 https://github.com/RodrigoMartins8891/devburger-back
+
+
 **Rodrigo Martins**
 Desenvolvedor Full Stack
 
