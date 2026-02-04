@@ -1,134 +1,56 @@
-# 🍔 DevBurger — Sistema Full Stack de Pedidos
+🍔 DevBurger – Frontend
 
-Projeto **Full Stack** desenvolvido para simular um sistema real de pedidos de uma hamburgueria, com **cliente**, **painel administrativo** e **atualização de status em tempo real**.
+Frontend da aplicação DevBurger, uma plataforma de pedidos de hamburgueria desenvolvida para praticar conceitos modernos de Front-end, consumo de APIs REST e organização de projetos React.
 
-Este projeto foi construído com foco em **boas práticas**, **organização de código**, **autenticação**, **integração frontend/backend** e **experiência real de uso**.
+O sistema permite que usuários visualizem produtos, adicionem itens ao carrinho e realizem pedidos de forma simples e intuitiva.
 
----
+🚀 Tecnologias Utilizadas
 
-## 🚀 Funcionalidades
+React
 
-### 👤 Cliente
+JavaScript
 
-* Login com autenticação JWT
-* Listagem de produtos
-* Carrinho de compras
-* Finalização de pedido
-* Visualização de pedidos realizados
-* **Atualização de status em tempo real (WebSocket)**
+Vite
 
-### 🛠️ Admin
+CSS Modules
 
-* Login administrativo
-* Painel de pedidos
-* Alteração do status do pedido:
+Axios
 
-  * RECEBIDO
-  * EM_PREPARO
-  * ENVIADO
-  * FINALIZADO
-* Atualização instantânea para o cliente
+React Router DOM
 
----
+🎯 Funcionalidades
 
-## 🧠 Tecnologias Utilizadas
+Listagem de produtos por categoria
 
-### Frontend
+Adição e remoção de itens no carrinho
 
-* React
-* Vite
-* React Router DOM
-* Axios
-* Socket.io Client
+Atualização dinâmica de valores
 
-### Backend
+Integração com API backend
 
-* Node.js
-* Express
-* MySQL
-* Socket.io
-* JWT (Autenticação)
-* Bcrypt (Hash de senha)
+Navegação entre páginas
 
----
+Interface responsiva
 
-## 🔐 Autenticação
+🔗 Integração com Backend
 
-* Autenticação baseada em **JWT**
-* Controle de acesso para:
+O frontend consome a API do projeto DevBurger Backend:
 
-  * Usuário comum
-  * Usuário administrador (`is_admin`)
-* Rotas protegidas no frontend e backend
+👉 Repositório do backend:
+https://github.com/RodrigoMartins8891/devburger-back
 
----
+▶️ Como Executar o Projeto
+# Clone o repositório
+git clone https://github.com/RodrigoMartins8891/devburger-front.git
 
-## 📡 Tempo Real
+# Entre na pasta do projeto
+cd devburger-front
 
-* Comunicação em tempo real utilizando **Socket.io**
-* Evento principal:
-
-```
-pedido-status-atualizado
-```
-
-* O cliente recebe automaticamente a mudança de status sem necessidade de refresh
-
----
-
-## 🗄️ Banco de Dados
-
-Principais tabelas:
-
-* usuarios
-* produtos
-* pedidos
-* pedido_itens
-* pedido_status_historico
-
----
-
-## ▶️ Como rodar o projeto
-
-### Backend
-
-```bash
+# Instale as dependências
 npm install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-```
-
-Configure o arquivo `.env`:
-
-```env
-PORT=3000
-JWT_SECRET=sua_chave_secreta
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=senha
-DB_NAME=devburger
-```
-
-### Frontend
-
-```bash
-npm install
-npm run dev
-```
-
----
-
-
-## 🎯 Objetivo do Projeto
-
-Este projeto foi desenvolvido com foco em:
-
-* Prática real de um sistema full stack
-* Consolidação de conceitos de backend e frontend
-* Preparação para oportunidades como **Desenvolvedor Full Stack Júnior**
-
----
-
-## 👨‍💻 Autor
 
 **Rodrigo Martins**
 Desenvolvedor Full Stack
