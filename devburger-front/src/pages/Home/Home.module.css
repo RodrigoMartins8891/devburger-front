@@ -142,8 +142,8 @@
     position: absolute;
     width: 70%;
     max-width: 360px;
-    bottom: 24%;
-    left: 71%;
+    bottom: 11%;
+    left: 76%;
     transform: translateX(-50%);
     z-index: 1;
     filter: blur(2px);

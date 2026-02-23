@@ -1,10 +1,11 @@
 import axios from 'axios';
 
 export const api = axios.create({
-    baseURL: 'http://localhost:3000',
+    // Substituído localhost pela URL real do Back4App
+    baseURL: 'https://devburgerback-uasag41r.b4a.run',
 });
 
-// 🔐 INTERCEPTOR — AQUI
+// 🔐 INTERCEPTOR — AQUI (Mantém igual)
 api.interceptors.request.use(config => {
     const token = localStorage.getItem('token');
 
