@@ -13,9 +13,9 @@ import { Checkout } from "../pages/Checkout";
 // Admin Imports
 import { AdminRoute } from "./AdminRoute";
 import { PrivateRoute } from "./PrivateRoute";
-import { AdminLayout } from "../pages/Admin/AdminLayout";
-import { AdminPedidos } from "../pages/Admin/AdminPedidos";
-import { AdminProdutos } from "../pages/Admin/AdminProdutos";
+import { AdminLayout } from "../pages/Admin/adminLayout";
+import { AdminPedidos } from "../pages/Admin/adminPedidos";
+import { AdminProdutos } from "../pages/Admin/adminProdutos";
 import { AdminEditarProduto } from '../pages/Admin/AdminEditarProduto';
 
 export function AppRoutes() { // Use default se for o único export do arquivo
