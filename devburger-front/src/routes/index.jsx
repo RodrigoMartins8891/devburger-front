@@ -16,7 +16,7 @@ import { PrivateRoute } from "./PrivateRoute";
 import { AdminLayout } from "../pages/Admin/adminLayout";
 import { AdminPedidos } from "../pages/Admin/adminPedidos";
 import { AdminProdutos } from "../pages/Admin/adminProdutos";
-import { AdminEditarProduto } from '../pages/Admin/AdminEditarProduto';
+import { AdminEditarProduto } from '../pages/Admin/adminEditarProduto';
 
 export function AppRoutes() { // Use default se for o único export do arquivo
   return (
