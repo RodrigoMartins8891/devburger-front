@@ -1,313 +1,293 @@
 .main {
-    background-color: #12372A;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  background: url("../../assets/burger3.0.png");
+  background-size: cover;
+  background-position: center right; /* Alinha o hambúrguer da foto à direita */
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .main header {
-    padding: 15px 5%;
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 90px;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 90px;
 }
 
 /* Container do Logo */
 .logoWrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10;
 }
 
 /* O "DB" estilizado como um selo tecnológico */
 .logoBadge {
-    background-color: #FBFADA;
-    color: #12372A; /* Cor de fundo da sua main para contraste */
-    font-family: 'Lexend Zetta', sans-serif;
-    font-weight: 800;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 1.2rem;
+  background-color: #fbfada;
+  color: #12372a;
+  font-family: "Lexend Zetta", sans-serif;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 1.2rem;
 }
 
 /* Título principal mantendo sua tipografia original */
 .logoTitle {
-    margin: 0;
-    font-size: clamp(1.5rem, 4vw, 2.2rem);
-    color: #FBFADA;
-    font-family: 'Lexend Zetta', sans-serif;
-    font-weight: 500;
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  color: #fbfada;
+  font-family: "Lexend Zetta", sans-serif;
+  font-weight: 500;
 }
 
 /* Destaque na palavra BURGER com a cor secundária do seu tema */
 .logoTitle span {
-    color: #ADB99F;
-    font-weight: 700;
+  color: #adb99f;
+  font-weight: 700;
 }
 
 .main header nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
 }
 
 .main header nav a {
-    color: #FBFADA;
-    font-weight: 200;
-    font-family: 'Sansita Swashed', sans-serif;
-    text-decoration: none;
-    font-size: 1.7rem;
-    transition: color 0.3s;
+  color: #fbfada;
+  font-weight: 200;
+  font-family: "Sansita Swashed", sans-serif;
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: color 0.3s;
 }
 
 .main header nav a:hover {
-    color: #ADB99F;
+  color: #adb99f;
 }
 
 /* HERO */
 .hero {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10%;
+  height: 100%;
 }
 
 /* TEXTO */
 .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  max-width: 700px;
 }
 
 .text span {
-    font-family: 'lexend Zetta', sans-serif;
-    font-weight: 550;
-    color: #ADB99F;
-    letter-spacing: 6px;
-    font-size: 2.8rem;
-    margin: 12px 0 0 0;
-    padding: 0;
-    line-height: 1;
+  font-family: "lexend Zetta", sans-serif;
+  font-weight: 550;
+  color: #adb99f;
+  letter-spacing: 6px;
+  font-size: 2.8rem;
+  margin: 12px 0 0 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .text h2 {
-    font-size: 7rem;
-    font-family: 'sansita swashed', sans-serif;
-    color: #FBFADA;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+  font-size: 7rem;
+  font-family: "sansita swashed", sans-serif;
+  color: #fbfada;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .text p {
-    font-size: 2.5rem;
-    font-family: 'lexend Zetta', sans-serif;
-    color: #ADB99F;
-    opacity: 0.9;
-    margin: 15px 0 0 0;
-    padding: 0;
-    text-align: left;
+  font-size: 2.5rem;
+  font-family: "lexend Zetta", sans-serif;
+  color: #adb99f;
+  opacity: 0.9;
+  margin: 15px 0 0 0;
+  padding: 0;
+  text-align: left;
 }
-
-/* IMAGEM */
-.image {
-    position: relative; /* Isso é o "âncora" para o absolute funcionar */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-    max-width: 600px; /* Ou o tamanho que você definiu para o hambúrguer */
-    margin: 0 auto;
-}
-
-/* O Hambúrguer */
-.image img {
-    width: 100%;
-    height: auto;
-    z-index: 2;
-    position: relative; /* Garante que ele fique acima da sombra */
-}
-
 
 .thumbnails {
-    display: flex;
-    gap: 15px;
-    margin-top: 75px;
-    align-self: center;
+  display: flex;
+  gap: 15px;
+  margin-top: 75px;
+  align-self: center;
 }
 
 .thumbnails img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.05);
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.05);
 }
-
 
 /* --- RESPONSIVO --- */
 
 @media (max-width: 1024px) {
-    .text h2 {
-        font-size: 4rem;
+  .text h2 {
+    font-size: 4rem;
+  }
 
-    }
+  .image img {
+    max-width: 400px;
+  }
 
-    .image img {
-        max-width: 400px;
-    }
-
-    .image1 img {
-        width: 60%;
-        max-width: 280px;
-        bottom: 27%;
-        left: 78%;
-    }
+  .image1 img {
+    width: 60%;
+    max-width: 280px;
+    bottom: 27%;
+    left: 78%;
+  }
 }
 
 @media (max-width: 880px) {
+  .main header {
+    flex-direction: column;
+    height: auto;
+    padding: 35px;
+    margin-top: 15px;
+    gap: 20px;
+  }
 
-    .main header {
-        flex-direction: column;
-        height: auto;
-        padding: 35px;
-        margin-top: 15px;
-        gap: 20px;
-    }
+  .text h2 {
+    font-size: 3.5rem;
+  }
 
-    .text h2 {
-        font-size: 3.5rem;
-    }
+  .image img {
+    max-width: 300px;
+  }
 
-    .image img {
-        max-width: 300px;
-    }
-
-    .image1 img {
-        width: 50%;
-        max-width: 220px;
-        top: 72%;
-        left: 88%;
-    }
+  .image1 img {
+    width: 50%;
+    max-width: 220px;
+    top: 72%;
+    left: 88%;
+  }
 }
 
 @media (max-width: 768px) {
-    .main {
-        overflow-y: auto;
-        height: auto;
-        min-height: 100vh;
-    }
+  .main {
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+  }
 
-    .main header {
-        flex-direction: column;
-        height: auto;
-        padding: 28px;
-        gap: 12px;
-    }
+  .main header {
+    flex-direction: column;
+    height: auto;
+    padding: 28px;
+    gap: 12px;
+  }
 
-    .main header nav {
-        position: static;
-        transform: none;
-        left: 0;
-        gap: 15px;
-    }
+  .main header nav {
+    position: static;
+    transform: none;
+    left: 0;
+    gap: 15px;
+  }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 45px;
-    }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 45px;
+  }
 
-    .text {
-        align-items: center;
-    }
+  .text {
+    align-items: center;
+  }
 
-    .text p,
-    .text span {
-        text-align: center;
-    }
+  .text p,
+  .text span {
+    text-align: center;
+  }
 
-    .text h2 {
-        font-size: 3rem;
-    }
+  .text h2 {
+    font-size: 3rem;
+  }
 
-    .image {
-        margin-right: 80px;
-    }
+  .image {
+    margin-right: 80px;
+  }
 
-    .image1 img {
-        width: 50%;
-        left: 53%;
-        bottom: 4%;
-    }
+  .image1 img {
+    width: 50%;
+    left: 53%;
+    bottom: 4%;
+  }
 
-    .thumbnails {
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
+  .thumbnails {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 480px) {
-    .main {
-        height: auto;
-        min-height: 100vh;
-    }
+  .main {
+    height: auto;
+    min-height: 100vh;
+  }
 
-    .text h2 {
-        font-size: 2.5rem;
-    }
+  .text h2 {
+    font-size: 2.5rem;
+  }
 
-    .text span {
-        font-size: 1.2rem;
-        letter-spacing: 3px;
-    }
+  .text span {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
 
-    .image img {
-        max-width: 300px;
-    }
+  .image img {
+    max-width: 300px;
+  }
 
-    .image1 img {
-        width: 50%;
-        left: 50%;
-        bottom: 21%;
-    }
+  .image1 img {
+    width: 50%;
+    left: 50%;
+    bottom: 21%;
+  }
 }
 
 @media (max-width: 320px) {
-    .text h2 {
-        font-size: 1.6rem;
-    }
+  .text h2 {
+    font-size: 1.6rem;
+  }
 
-    .text p {
-        font-size: 1.2rem;
-    }
+  .text p {
+    font-size: 1.2rem;
+  }
 
-    .image img {
-        max-width: 220px;
-    }
+  .image img {
+    max-width: 220px;
+  }
 
-    .image1 img {
-        width: 50%;
-        left: 40%;
-        bottom: 25%;
-    }
+  .image1 img {
+    width: 50%;
+    left: 40%;
+    bottom: 25%;
+  }
 
-    .thumbnails img {
-        width: 30px;
-        height: 30px;
-    }
+  .thumbnails img {
+    width: 30px;
+    height: 30px;
+  }
 }

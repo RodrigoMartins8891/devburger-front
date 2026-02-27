@@ -1,6 +1,4 @@
 import estilo from "./Home.module.css";
-import burger from "../../assets/burge.png";
-import ellipse from "../../assets/ellipse 2.png";
 import thumb1 from "../../assets/1.png";
 import thumb2 from "../../assets/2.png";
 import thumb3 from "../../assets/3.png";
@@ -9,9 +7,9 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <main className={estilo.main}>
+    // Aplicamos o estilo inline para o background aqui ou via CSS (preferível via CSS se o caminho for estático)
+    <main className={estilo.main}> 
       <header className={estilo.header}>
-        
         <div className={estilo.logoWrapper}>
           <div className={estilo.logoBadge}>DB</div>
           <h1 className={estilo.logoTitle}>
@@ -40,10 +38,8 @@ export default function Home() {
             <img src={thumb4} alt="Burger Variedade 4" />
           </div>
         </div>
-
-        <div className={estilo.image}>
-          <img src={burger} alt="Burger" />
-        </div>
+        
+        {/* A div .image foi removida daqui pois agora faz parte do background */}
       </section>
     </main>
   );
