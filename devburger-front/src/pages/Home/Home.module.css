@@ -140,13 +140,13 @@
 /* A Sombra (Ellipse) */
 .image1 img {
     position: absolute;
-    width: 70%;
-    max-width: 360px;
-    bottom: 11%;
-    left: 76%;
-    transform: translateX(-50%);
+    width: 22%;       /* Ajuste o tamanho conforme preferir */
+    left: 50%;        /* Alinha exatamente no meio do container */
+    bottom: 50px;     /* Use um valor fixo (px) ou (rem) para manter a distância da base */
+    transform: translateX(-50%); /* Garante que o centro da sombra encontre o centro do hambúrguer */
     z-index: 1;
-    filter: blur(2px);
+    filter: blur(4px); /* Aumentar um pouco o blur ajuda no realismo */
+    opacity: 0.6;      /* Opcional: deixar um pouco transparente */
 }
 
 
