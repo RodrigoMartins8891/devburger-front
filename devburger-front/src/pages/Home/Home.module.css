@@ -139,18 +139,6 @@
     position: relative; /* Garante que ele fique acima da sombra */
 }
 
-/* A Sombra (Ellipse) */
-.image1 img {
-    position: absolute;
-    width: 80%;       /* 80% da largura do hambúrguer, não da tela */
-    left: 50%;
-    bottom: -20px;    /* Fixa 20px abaixo da base do hambúrguer */
-    transform: translateX(-50%);
-    z-index: 1;
-    filter: blur(8px);
-    opacity: 0.5;
-    pointer-events: none;
-}
 
 .thumbnails {
     display: flex;

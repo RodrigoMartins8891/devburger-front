@@ -44,10 +44,6 @@ export default function Home() {
         <div className={estilo.image}>
           <img src={burger} alt="Burger" />
         </div>
-
-        <div className={estilo.image1}>
-          <img src={ellipse} alt="Ellipse" />
-        </div>
       </section>
     </main>
   );
