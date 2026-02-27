@@ -121,35 +121,35 @@
 }
 
 /* IMAGEM */
+/* No container pai */
 .image {
-    position: relative;
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Remova o width: 100% se ele estiver empurrando o hambúrguer */
+    width: fit-content; 
+    margin: 0 auto;
 }
 
 /* O Hambúrguer */
 .image img {
-    width: 100%;
-    max-width: 650px;
+    max-width: 400px; /* Tamanho que parece estar nas fotos */
     height: auto;
-    position: relative;
     z-index: 2;
 }
 
-/* A Sombra (Ellipse) */
+/* A Sombra (Ajuste de posição) */
 .image1 img {
     position: absolute;
-    width: 22%;       /* Ajuste o tamanho conforme preferir */
-    left: 50%;        /* Alinha exatamente no meio do container */
-    bottom: 50px;     /* Use um valor fixo (px) ou (rem) para manter a distância da base */
-    transform: translateX(-50%); /* Garante que o centro da sombra encontre o centro do hambúrguer */
+    width: 60%;        /* Um pouco menor que o hambúrguer fica mais real */
+    left: 50%;         /* Agora o 50% vai funcionar porque o pai tem o tamanho do hambúrguer */
+    bottom: 5%;        /* Ajuste fino da altura */
+    transform: translateX(-50%);
     z-index: 1;
-    filter: blur(4px); /* Aumentar um pouco o blur ajuda no realismo */
-    opacity: 0.6;      /* Opcional: deixar um pouco transparente */
+    filter: blur(8px);
+    opacity: 0.4;
 }
-
-
 .thumbnails {
     display: flex;
     gap: 15px;
