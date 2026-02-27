@@ -122,30 +122,29 @@
 
 /* IMAGEM */
 .image {
-    position: relative;
+    position: relative; /* Isso é o "âncora" para o absolute funcionar */
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-    width: fit-content; 
-    margin-left: auto;  
-    margin-right: auto;  
+    width: 100%; 
+    max-width: 600px; /* Ou o tamanho que você definiu para o hambúrguer */
+    margin: 0 auto;
 }
 
 /* O Hambúrguer */
 .image img {
-    max-width: 400px; 
+    width: 100%;
     height: auto;
     z-index: 2;
+    position: relative; /* Garante que ele fique acima da sombra */
 }
 
-/* A Sombra (Ajuste de posição) */
+/* A Sombra (Ellipse) */
 .image1 img {
     position: absolute;
-    width: 80%;
+    width: 80%;       /* 80% da largura do hambúrguer, não da tela */
     left: 50%;
-    bottom: -10px; 
+    bottom: -20px;    /* Fixa 20px abaixo da base do hambúrguer */
     transform: translateX(-50%);
     z-index: 1;
     filter: blur(8px);
